@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'yemi/teach'
+
+  get 'yemi/reach'
+
+  get 'yemi/preach'
+
   get 'welcome/index'
 
   get "welcome/aboutus"

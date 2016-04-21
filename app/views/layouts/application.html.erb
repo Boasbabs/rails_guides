@@ -7,8 +7,99 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	   <!--start container-->
+   <div id="container">
 
-<%= yield %>
+      <!--start header-->
+      <header>
+         <!--start logo-->
+         <a href="#" id="logo"><img src="images/logo.png" width="221" height="84" alt="logo"/></a>    
+         <!--end logo-->
 
-</body>
+         <!--start menu-->
+         <nav>
+            <ul>
+               <li><a href="#" class="current">Home</a></li>
+               <li><a href="#">About us</a></li>
+               <li><a href="#">Services</a></li>
+               <li><a href="#">Portfolio</a></li>
+               <li><a href="#">News</a></li>
+               <li><a href="#">Contact</a></li>
+            </ul>
+         </nav>
+      <!--end menu-->
+
+      <!--end header-->
+      </header>
+
+      <!--start intro-->
+      <div id="intro">
+         <img src="images/banner1.png"  alt="baner">
+      </div>
+      <!--end intro-->
+
+      <header class="group_bannner_left">
+         <hgroup>
+            <h1>We serve fresh ideas</h1>
+            <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu. Phasellus sollicitudin. 
+            </h2>
+         </hgroup>
+         <div class="button black"><a href="#">Read more about our fresh ideas</a></div>
+      </header>
+
+      <!--start holder-->
+
+         <div class="holder_content">
+
+         <section class="group1">
+          <!--  ###########################
+           ########################### -->
+           <%= yield %>
+
+         </section>
+
+         <aside class="group2">
+            <h3>Latest news</h3>
+
+            <article class="holder_news">
+               <h4>Lorem ipsum<span>10.09.2011</span></h4>
+               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu.<span class="readmore">
+                  <a href="#">Read more..</a></span>
+               </p>
+            </article>
+
+            <article class="holder_news">
+               <h4>Lorem ipsum<span>20.09.2011</span></h4>
+               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu.	
+                  <span class="readmore"><a href="#">Read more..</a></span>
+               </p>
+            </article>
+
+            <article class="holder_news">
+               <h4>Lorem ipsum<span>27.09.2011</span></h4>
+               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu. 
+                  <span class="readmore"><a href="#">Read more..</a></span>
+               </p>
+            </article>
+            <a class="photo_hover2" href="#">
+               <img src="images/picture3.jpg" width="257" height="295" alt="picture"/>
+            </a>
+         </aside>
+
+      </div>
+   <!--end holder-->
+   </div>
+   <!--end container-->
+
+ <footer>
+   <div class="container">  
+	   <div id="FooterTwo"> © 2011 Boasbabs Rails ideas </div>
+	   <div id="FooterTree">
+	   Valid html5, css3, design and code by <a href="http://www.github.com/boasbabs/">Github - creative simplicity</a>
+	   </div> 
+   </div>
+   </footer>
+   <!--end footer-->
+   <!-- Free template distributed by http://freehtml5templates.com -->   
+   </body>
 </html>
