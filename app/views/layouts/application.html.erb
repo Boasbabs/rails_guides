@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="utf-8">
   <title>Blog</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
 </head>
 <body>
 	   <!--start container-->
@@ -13,7 +15,10 @@
       <!--start header-->
       <header>
          <!--start logo-->
-         <a href="#" id="logo"><img src="images/logo.png" width="221" height="84" alt="logo"/></a>    
+         <a href="#" id="logo">
+        <!--  <img src="images/logo.png" width="221" height="84" alt="logo"/> -->
+        <%= image_tag "logo.png", size: "221x84", alt: "logo by rails" %>
+         </a>    
          <!--end logo-->
 
          <!--start menu-->
